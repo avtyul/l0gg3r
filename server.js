@@ -9,6 +9,8 @@ let reqCount = 0;
 app.get('/', (req, res) => {
     // I l0v3 c0pypast3
     console.log('Request #%d', ++reqCount);
+    console.log('Ip:');
+    console.log(req.ip);
     console.log('Headers:');
     console.log(req.headers);
     console.log('Body:');
